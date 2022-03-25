@@ -201,8 +201,8 @@ def set_mode(resolution, flags=0, depth=0):
     global _display_surface
     _display_surface = pygame.surface.Surface(size=(w, h))
 
-    document['pydiv'] <= _display_surface.canvas
-    print('canvas id {} ADDED->ok'.format(_display_surface.canvas.id))
+    document <= _display_surface.canvas
+    #print('canvas id {} ADDED->ok'.format(_display_surface.canvas.id))
     return _display_surface
 
 

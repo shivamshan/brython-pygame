@@ -14,7 +14,7 @@ class Surface:
     ref_to_mainsurface = None
     
     def __init__(self, size=None, depth=16, surf=None, jsimg=None):
-        print('crea surface num.{}  - - {} {} {} {} '.format(Surface._free_canvas_id, size, depth, surf, jsimg))
+        #print('crea surface num.{}  - - {} {} {} {} '.format(Surface._free_canvas_id, size, depth, surf, jsimg))
 
         self._canvas = None
         self._js_image = None

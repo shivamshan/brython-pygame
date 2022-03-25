@@ -129,14 +129,14 @@ class DrawLine:
           _x=self._x0 + _i/_num_segments * _x_diff
           _y=self._y0 + _i/_num_segments * _y_diff
             
-          _segments.append({'type': 'LINE': 'x0': _pos_x, 'y0': _pos_y,
+          _segments.append({'type': 'LINE', 'x0': _pos_x, 'y0': _pos_y,
                             'x1': _x, 'y1': _y, 'color': self._color})
 
           _pos_x=_x
           _pos_y=_y
 
       if _pos_x != self._x1 or _pos_y != self._y1:
-         _segments.append({'type': 'LINE': 'x0': _pos_x, 'y0': _pos_y,
+         _segments.append({'type': 'LINE', 'x0': _pos_x, 'y0': _pos_y,
                            'x1': _x, 'y1': _y, 'color': self._color})
 
       return _segments
